@@ -13,35 +13,39 @@
       <a href="./data-safety.html">Fiche Data safety</a>
     </nav>
     <h1>Fiche Data safety</h1>
-    <p class="updated">Mise à jour : 23 octobre 2026</p>
+    <p class="updated">Mise à jour : 26 octobre 2026</p>
     <p>Cette fiche reprend, en langage clair, les déclarations prévues par le formulaire Data safety de Google Play. Elle décrit ce que l’app et ses SDK partenaires font — pas un recueil de données sur nos serveurs (il n’y en a pas).</p>
 
     <h2>Vue d’ensemble</h2>
-    <p>Collecte par l’éditeur : aucune donnée envoyée à un serveur Cyclo Manager.</p>
-    <p>Partage : oui, uniquement via Google AdMob (publicités) pour les joueurs sans pass, lorsque le réseau est disponible et le consentement le permet.</p>
-    <p>Vente de données par l’éditeur : non. Chiffrement en transit : oui pour les appels pubs / Play. Suppression : oui (sauvegarde locale + désinstallation).</p>
+    <p>Collecte : aucune donnée envoyée à un serveur Cyclo Manager. Des données sont collectées par les SDK Google intégrés : AdMob (publicités) et Google Analytics for Firebase (mesure d’audience anonyme, avec consentement dans l’EEE / UK / Suisse).</p>
+    <p>Partage : oui, uniquement via Google AdMob (publicités) pour les joueurs sans pass, lorsque le réseau est disponible et le consentement le permet. Firebase agit comme sous-traitant : ses données ne sont pas partagées avec des tiers.</p>
+    <p>Vente de données par l’éditeur : non. Chiffrement en transit : oui, toutes les données collectées passent par HTTPS (l’app n’a aucun appel réseau propre). Suppression : oui (sauvegarde locale + désinstallation + demande par e-mail).</p>
+    <p>Public visé : 16 ans et plus. L’app ne s’adresse pas aux enfants.</p>
 
     <h2>Données collectées — Identifiants de l’appareil</h2>
     <p>Identifiant publicitaire Android (permission AD_ID) : utilisé par Google AdMob pour diffuser et mesurer des publicités. Pas stocké par Cyclo Manager. Peut être réinitialisé dans les réglages du téléphone.</p>
     <p>Finalité : publicité. Optionnel : oui (pass sans pub, hors ligne, ou refus de consentement selon le message UMP).</p>
+    <p>Identifiant d’installation Firebase (app instance ID) : propre à l’application, sans lien avec l’identifiant publicitaire, réinitialisé à la désinstallation. Finalité : statistiques (analytics). Collecté, non partagé.</p>
 
     <h2>Données collectées — Informations financières</h2>
     <p>Historique d’achat in-app : traité par Google Play (pass sans publicité). Cyclo Manager ne reçoit que le statut d’achat / restauration, et enregistre localement « pass actif ».</p>
     <p>Finalité : traitement de l’achat. Données bancaires : jamais lues par l’app.</p>
 
-    <h2>Données collectées — Activité dans l’app (SDK pubs)</h2>
-    <p>Interactions avec les annonces (affichage, fermeture) : traitées par AdMob pour la diffusion. Pas d’analytique produit (pas de Firebase Analytics, pas de suivi de carrière hors appareil).</p>
-    <p>Finalité : publicité. Absent si pass / hors ligne / course d’essai (pas d’interstitiel).</p>
+    <h2>Données collectées — Activité dans l’app</h2>
+    <p>Interactions avec les annonces (affichage, fermeture) : traitées par AdMob pour la diffusion. Finalité : publicité. Absent si pass / hors ligne / course d’essai (pas d’interstitiel).</p>
+    <p>Interactions avec l’app : 8 événements de jeu anonymes envoyés à Google Analytics for Firebase (carrière lancée, course d’essai, première course officielle, saison terminée, montée ou descente, faillite, pub récompensée regardée, réponse aux notifications). Ni nom, ni nom de club, ni e-mail. Finalité : statistiques (analytics). Collecté, non partagé, optionnel dans l’EEE / UK / Suisse (refus dans le message de consentement).</p>
+    <p>Notifications : locales, programmées sur l’appareil, aucune donnée envoyée.</p>
 
     <h2>Données non collectées</h2>
     <p>Position précise, contacts, photos, fichiers, SMS, calendrier, santé, audio, journal d’appels, nom réel, e-mail, liste d’apps, diagnostics / crash envoyés par l’éditeur (les SDK Google Play et AdMob peuvent en traiter de leur côté, voir plus haut).</p>
 
     <h2>Sécurité</h2>
-    <p>La partie reste sur l’appareil. Les échanges pubs et Play Billing passent par HTTPS. L’éditeur ne transmet pas la sauvegarde vers le cloud.</p>
+    <p>La partie reste sur l’appareil. Les échanges AdMob, Firebase et Play Billing passent par HTTPS. L’éditeur ne transmet pas la sauvegarde vers le cloud.</p>
     <p>Engagement « Independent security review » : non (jeu indie, pas d’audit externe déclaré).</p>
 
     <h2>Comment supprimer les données</h2>
     <p>Sauvegarde de carrière : Paramètres → Carrière → Quitter ce club, ou désinstallation.</p>
+    <p>Mesure d’audience : désinstaller l’app réinitialise l’identifiant Firebase ; une demande d’effacement peut être envoyée à <a href="mailto:Contact_GT.Solutions@proton.me">Contact_GT.Solutions@proton.me</a>.</p>
     <p>Identifiant pub : Réglages Android → Confidentialité / Google → Réinitialiser l’identifiant publicitaire.</p>
     <p>Achats : gérés par Google Play (historique du compte). Le pass peut être restauré sur un autre appareil via « Restaurer un achat ».</p>
 
