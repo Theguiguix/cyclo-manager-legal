@@ -5,15 +5,22 @@
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>Fiche Data safety — Cyclo Manager</title>
   <link rel="stylesheet" href="./legal.css" />
+  <link rel="alternate" hreflang="en" href="./data-safety-en.html" />
+  <script>
+    if (location.hash !== '#fr' && !(navigator.languages || [navigator.language]).some(function (l) { return /^fr/i.test(l || '') })) {
+      location.replace('./data-safety-en.html')
+    }
+  </script>
 </head>
 <body>
   <main>
     <nav>
       <a href="./privacy.html">Politique de confidentialité</a>
       <a href="./data-safety.html">Fiche Data safety</a>
+      <a href="./data-safety-en.html" hreflang="en" lang="en">English</a>
     </nav>
     <h1>Fiche Data safety</h1>
-    <p class="updated">Mise à jour : 26 octobre 2026</p>
+    <p class="updated">Mise à jour : 13 novembre 2026</p>
     <p>Cette fiche reprend, en langage clair, les déclarations prévues par le formulaire Data safety de Google Play. Elle décrit ce que l’app et ses SDK partenaires font — pas un recueil de données sur nos serveurs (il n’y en a pas).</p>
 
     <h2>Vue d’ensemble</h2>
@@ -33,7 +40,7 @@
 
     <h2>Données collectées — Activité dans l’app</h2>
     <p>Interactions avec les annonces (affichage, fermeture) : traitées par AdMob pour la diffusion. Finalité : publicité. Absent si pass / hors ligne / course d’essai (pas d’interstitiel).</p>
-    <p>Interactions avec l’app : 8 événements de jeu anonymes envoyés à Google Analytics for Firebase (carrière lancée, course d’essai, première course officielle, saison terminée, montée ou descente, faillite, pub récompensée regardée, réponse aux notifications). Ni nom, ni nom de club, ni e-mail. Finalité : statistiques (analytics). Collecté, non partagé, optionnel dans l’EEE / UK / Suisse (refus dans le message de consentement).</p>
+    <p>Interactions avec l’app : 9 événements de jeu anonymes envoyés à Google Analytics for Firebase (carrière lancée, course d’essai, première course officielle, saison terminée, montée ou descente, faillite, pub récompensée regardée, réponse aux notifications, choix de fin de mandat). Ni nom, ni nom de club, ni e-mail. Finalité : statistiques (analytics). Collecté, non partagé, optionnel dans l’EEE / UK / Suisse (refus dans le message de consentement).</p>
     <p>Notifications : locales, programmées sur l’appareil, aucune donnée envoyée.</p>
 
     <h2>Données non collectées</h2>
@@ -48,7 +55,6 @@
     <p>Mesure d’audience : désinstaller l’app réinitialise l’identifiant Firebase ; une demande d’effacement peut être envoyée à <a href="mailto:Contact_GT.Solutions@proton.me">Contact_GT.Solutions@proton.me</a>.</p>
     <p>Identifiant pub : Réglages Android → Confidentialité / Google → Réinitialiser l’identifiant publicitaire.</p>
     <p>Achats : gérés par Google Play (historique du compte). Le pass peut être restauré sur un autre appareil via « Restaurer un achat ».</p>
-
   </main>
 </body>
 </html>

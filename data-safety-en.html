@@ -1,0 +1,55 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Data safety sheet — Cyclo Manager</title>
+  <link rel="stylesheet" href="./legal.css" />
+  <link rel="alternate" hreflang="fr" href="./data-safety.html" />
+</head>
+<body>
+  <main>
+    <nav>
+      <a href="./privacy-en.html">Privacy policy</a>
+      <a href="./data-safety-en.html">Data safety form</a>
+      <a href="./data-safety.html#fr" hreflang="fr" lang="fr">Français</a>
+    </nav>
+    <h1>Data safety sheet</h1>
+    <p class="updated">Updated: November 13, 2026</p>
+    <p>This sheet restates, in plain language, the declarations made in the Google Play Data safety form. It describes what the app and its partner SDKs do — not data gathered on our servers (there are none).</p>
+
+    <h2>Overview</h2>
+    <p>Collection: no data sent to a Cyclo Manager server. Data is collected by the built-in Google SDKs: AdMob (ads) and Google Analytics for Firebase (anonymous audience measurement, with consent in the EEA / UK / Switzerland).</p>
+    <p>Sharing: yes, only through Google AdMob (ads) for players without the pass, when the network is available and consent allows it. Firebase acts as a processor: its data is not shared with third parties.</p>
+    <p>Data sold by the publisher: no. Encryption in transit: yes, all collected data goes over HTTPS (the app makes no network calls of its own). Deletion: yes (local save + uninstall + request by email).</p>
+    <p>Target audience: 16 and over. The app is not aimed at children.</p>
+
+    <h2>Data collected — Device identifiers</h2>
+    <p>Android advertising ID (AD_ID permission): used by Google AdMob to serve and measure ads. Not stored by Cyclo Manager. Can be reset in the phone settings.</p>
+    <p>Purpose: advertising. Optional: yes (ad-free pass, offline, or consent refused in the UMP message).</p>
+    <p>Firebase installation ID (app instance ID): specific to the app, unrelated to the advertising ID, reset on uninstall. Purpose: analytics. Collected, not shared.</p>
+
+    <h2>Data collected — Financial information</h2>
+    <p>In-app purchase history: handled by Google Play (ad-free pass). Cyclo Manager only receives the purchase / restore status and stores “pass active” locally.</p>
+    <p>Purpose: purchase processing. Bank details: never read by the app.</p>
+
+    <h2>Data collected — App activity</h2>
+    <p>Ad interactions (display, close): handled by AdMob to serve ads. Purpose: advertising. Absent with the pass / offline / trial race (no interstitial).</p>
+    <p>App interactions: 9 anonymous game events sent to Google Analytics for Firebase (career started, trial race, first official race, season completed, promotion or relegation, bankruptcy, rewarded ad watched, answer to notifications, end-of-mandate choice). No name, club name or email. Purpose: analytics. Collected, not shared, optional in the EEA / UK / Switzerland (refusal in the consent message).</p>
+    <p>Notifications: local, scheduled on the device, no data sent.</p>
+
+    <h2>Data not collected</h2>
+    <p>Precise location, contacts, photos, files, SMS, calendar, health, audio, call log, real name, email, app list, diagnostics / crashes sent by the publisher (the Google Play and AdMob SDKs may process some on their side, see above).</p>
+
+    <h2>Security</h2>
+    <p>The game stays on the device. AdMob, Firebase and Play Billing traffic goes over HTTPS. The publisher does not upload the save to the cloud.</p>
+    <p>“Independent security review” commitment: no (indie game, no declared external audit).</p>
+
+    <h2>How to delete data</h2>
+    <p>Career save: Settings → Career → Leave this club, or uninstall.</p>
+    <p>Audience measurement: uninstalling the app resets the Firebase ID; an erasure request can be sent to <a href="mailto:Contact_GT.Solutions@proton.me">Contact_GT.Solutions@proton.me</a>.</p>
+    <p>Advertising ID: Android settings → Privacy / Google → Reset advertising ID.</p>
+    <p>Purchases: managed by Google Play (account history). The pass can be restored on another device with “Restore purchase”.</p>
+  </main>
+</body>
+</html>
